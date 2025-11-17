@@ -1,0 +1,172 @@
+/*
+Gabriele Abruscato 
+Matricola: 0312200540
+Project Work 2025
+Report di sostenibiltà del Gruppo Pittini 
+*/
+
+
+/* SEZIONE NAVBAR */
+
+
+/* bordo inferiore della navbar */
+.navbar {
+    border-bottom: 2px solid #181717;
+}
+
+
+/* dimensioni del logo dell'azienda nella navbar */
+.logo-azienda {
+    height: 4rem;
+}
+
+
+/* font, grassetto e colore del testo nella navbar */
+.voce-menu .nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(63, 63, 66);
+}
+
+
+/* effetto hover ovvero cambio colore al passaggio del mouse nei link della navbar */
+.voce-menu .nav-link:hover {
+    color: rgb(0, 53, 142);
+}
+
+
+/* margine superiore per le sezioni per compensare l'altezza della navbar */
+#home,
+#storia,
+#sostenibilita,
+#lavora-con-noi {
+    scroll-margin-top: 80px;
+}
+
+
+/* FONT */
+
+
+/* font della pagina con aggiunta di padding superiore per compensare la navbar fissa */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    padding-top: 5rem;
+}
+
+
+/* spessore dei caratteri per i titoli principali */
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+
+/* spessore dei caratteri per il testo della pagina */
+.lead {
+    font-weight: 300;
+}
+
+
+/* BANNER */
+
+
+/* modifiche applicate a tutti i banner della pagina */
+.banner {
+    background-position: center; /* centra l'immagine */
+    background-repeat: no-repeat; /* evita la ripetizione dell'immagine */
+    background-size: cover; /* l'immagine prende tutto il container */
+    border-top: 2px solid #181717; /* bordo superiore */
+    border-bottom: 2px solid #181717; /* bordo inferiore */
+    padding-top: 13rem; /* spazio sopra */
+    padding-bottom: 13rem; /* spazio sotto */
+}
+
+
+/* banner della sezione introduttiva */
+.banner-introduzione {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/sede-pittini.jpg");
+}
+
+
+/* banner della sezione storia */
+.banner-storia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/gruppo-pittini-storia.jpg");
+}
+
+
+/* banner della sezione sostenibilità */
+.banner-sostenibilita {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/pittini-sostenibilità.jpg");
+}
+
+
+/* IMMAGINI */
+
+
+/* modifche applicate a tutte le immagini della pagina */
+.immagine {
+    width: 25rem; /* larghezza fissa */
+    height: 25rem; /* altezza fissa */
+    max-width: 100%; /* l'immagine si adatta allo spazio disponibile */
+    background-size: cover; /* l'immagine prende tutto il container */
+    background-position: center; /* centra l'immagine */
+    border-radius: 22px; /* angoli arrotondati */
+    margin: 0 auto; /* centra l'immagine orizzontalmente */
+}
+
+
+/* effetto hover sulle immagini, ovvero un leggero ingrandimento quando si passa sull'immagine */
+.immagine:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* IMMAGINI SEZIONE SOSTENIBILITA' */
+
+
+/* immagine materiali riciclati */
+.img-materiali {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/materiali-riciclati.jpg');
+}
+
+
+/* immagine emissioni CO2 */
+.img-emissioni {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/emissioni-co2.jpg');
+}
+
+
+/* Immagine energia pulita */
+.img-energia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/energia-pulita.jpg');
+}
+
+
+/* IMMAGINI SEZIONE LAVORA CON NOI */
+
+
+/* Immagine lavoro */
+.img-lavoro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/opportunita-lavoro.jpg');
+}
+
+
+/* Immagine progetti */
+.img-progetti {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/progetti-aziendali.jpg');
+}
+
+
+/* Immagine formazione */
+.img-formazione {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/formazione-pittini.jpg');
+}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: rgb(224, 224, 224); /* Colore dello sfondo */
+    border-top: 2px solid rgb(39, 40, 41); /* Bordo superiore */
+}
