@@ -1,0 +1,180 @@
+/*
+Gabriele Abruscato 
+Matricola: 0312200540
+Project Work 2025
+Report di sostenibiltà del Gruppo Pittini 
+*/
+
+
+/* SEZIONE NAVBAR */
+
+
+/* bordo inferiore della navbar */
+.navbar {
+    border-bottom: 2px solid #181717;
+}
+
+
+/* dimensioni del logo dell'azienda nella navbar */
+.logo-azienda {
+    height: 4rem;
+}
+
+
+/* grandezza del font e colore del testo nella navbar */
+.voce-menu .nav-link {
+    font-size: 1.5rem;
+    color: #3f3f42;
+}
+
+
+/* effetto hover ovvero cambio colore al passaggio del mouse nei link della navbar */
+.voce-menu .nav-link:hover {
+    color: #00358e;
+}
+
+
+/* margine superiore per le sezioni per compensare l'altezza della navbar */
+#home, #storia, #sostenibilita, #lavora-con-noi {
+    scroll-margin-top: 80px;
+}
+
+
+/* FONT */
+
+
+/* font della pagina con aggiunta di padding superiore per compensare la navbar fissa */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    padding-top: 5rem;
+}
+
+
+/* BANNER */
+
+
+/* modifiche applicate a tutti i banner della pagina */
+.banner {
+    background-position: center; /* centra l'immagine */
+    background-repeat: no-repeat; /* evita la ripetizione dell'immagine */
+    background-size: cover; /* l'immagine prende tutto il container senza cambiare di forma */
+    border-top: 2px solid #181717; /* bordo superiore */
+    border-bottom: 2px solid #181717; /* bordo inferiore */
+    padding-top: 13rem; /* spazio sopra */
+    padding-bottom: 13rem; /* spazo sotto */
+}
+
+
+/* banner della sezione introduttiva */
+.banner-introduzione {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/sede-pittini.jpg");
+}
+
+
+/* banner della sezione storia */
+.banner-storia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/gruppo-pittini-storia.jpg");
+}
+
+
+/* banner della sezione sostenibilità */
+.banner-sostenibilita {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/pittini-sostenibilità.jpg");
+}
+
+
+/* IMMAGINI */
+
+
+/* modifche applicate a tutte le immagini della pagina */
+.immagine {
+    width: 100%;         /* l'immagine prende tutto lo spazio disponibile del contenitore */
+    max-width: 25rem;    /* l'immagine sul desktop non supera i 25rem */
+    aspect-ratio: 1 / 1; /* l'immagine resta quadrata */
+    background-size: cover; /* l'immagine prende tutto il container senza cambiare di forma */
+    background-position: center; /* centra l'immagine */
+    border-radius: 22px; /* angoli arrotondati */
+    margin: 0 auto; /* centra l'immagine orizzontalmente */
+}
+
+
+/* effetto hover sulle immagini, ovvero un leggero ingrandimento quando si passa sull'immagine */
+.immagine:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* SEZIONE SOSTENIBILITA' */
+
+
+/* immagine materiali riciclati */
+.img-materiali {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/materiali-riciclati.jpg');
+}
+
+
+/* immagine emissioni CO2 */
+.img-emissioni {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/emissioni-co2.jpg');
+}
+
+
+/* Immagine energia pulita */
+.img-energia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('img/energia-pulita.jpg');
+}
+
+
+/* SEZIONE LAVORA CON NOI */
+
+
+/* immagine lavoro */
+.img-lavoro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/opportunita-lavoro.jpg');
+}
+
+
+/* immagine progetti */
+.img-progetti {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/progetti-aziendali.jpg');
+}
+
+
+/* immagine formazione */
+.img-formazione {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/formazione-pittini.jpg');
+}
+
+/* colore del bottone */
+.btn {
+    background-color: #0ca75e;
+    border-color: #0ca75e;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #e0e0e0; /* colore dello sfondo */
+    border-top: 2px solid #272829; /* bordo superiore */
+}
+
+
+/* media query serve ad adattare il contenuto su schermi più piccoli */
+@media (max-width: 768px) {
+    .banner {
+        padding-top: 20%;    /* spazio sopra il banner che si adatta allo schermo*/
+        padding-bottom: 20%; /* spazio sotto il banner che si adatta allo schermo*/
+    }
+
+    .immagine {
+        max-width: 15rem; /* l'immagine non diventa più grande di 15 rem su schermi più piccoli */
+    }
+
+    /* dimensioni del titoli e del testo per adattarsi agli schermi più piccoli  */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+    p.lead { font-size: 1rem; }
+}
